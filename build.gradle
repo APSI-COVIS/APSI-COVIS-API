@@ -16,6 +16,10 @@ configurations {
 }
 
 repositories {
+	maven{
+		url "https://repo.osgeo.org/repository/release/"
+	}
+
 	mavenCentral()
 }
 
@@ -23,6 +27,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	implementation group: 'org.geotools', name: 'gt-geojson', version: '23.0'
 }
 
 bootJar {
