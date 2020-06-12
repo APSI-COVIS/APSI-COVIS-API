@@ -1,5 +1,5 @@
 package com.covis.api.covid;
 
 public enum CovidCasesType {
-    ACTIVE, DEATH, NEW
+    ACTIVE, RECOVERED, DEATH, NEW
 }
